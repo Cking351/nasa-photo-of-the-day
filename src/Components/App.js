@@ -8,10 +8,11 @@ import { BASE_URL, API_KEY } from '../secrets';
 import Axios from "axios";
 
 function App() {
-  const[photo,setPhoto] = useState();
-  const[title,setTitle] = useState();
-  const[info,setInfo] = useState();
-  const[date,setDate] = useState();
+  const [photo, setPhoto] = useState();
+  const [title, setTitle] = useState();
+  const [info, setInfo] = useState();
+  const [date, setDate] = useState();
+  const [copyright, setCopyright] = useState()
 
   useEffect(() => {
     Axios.get(`http:${BASE_URL}?${API_KEY}`)
@@ -24,6 +25,8 @@ function App() {
       setDate(dailyDate)
       const dailyInfo = response.data.explanation
       setInfo(dailyInfo)
+      const dailyCopy = response.data.copyright
+      setCopyright(dailyCopy)
     })
   })
 
@@ -31,9 +34,12 @@ function App() {
     <div className="App">
       <Header />
       <img src={photo} />
-      <h2>{title}</h2>
+      <h3>{title}</h3>
+      <p>Image Credit and Copyright: {copyright}</p>
       <h3>{date}</h3>
-      <p>{info}</p>
+      <div className='paraContainer'>
+      <p className='paraText'>{info}</p>
+      </div>
     </div>
   );
 }
