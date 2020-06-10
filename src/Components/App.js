@@ -20,6 +20,10 @@ function App() {
       setPhoto(dailyImg)
       const dailyTitle = response.data.title
       setTitle(dailyTitle)
+      const dailyDate = response.data.date
+      setDate(dailyDate)
+      const dailyInfo = response.data.explanation
+      setInfo(dailyInfo)
     })
   })
 
@@ -28,6 +32,8 @@ function App() {
       <Header />
       <img src={photo} />
       <h2>{title}</h2>
+      <h3>{date}</h3>
+      <p>{info}</p>
     </div>
   );
 }
