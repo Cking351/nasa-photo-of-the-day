@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react'
-// Importing API link and key
-import { BASE_URL, API_KEY } from '../secrets';
-import Axios from "axios";
+import styled from 'styled-components'
 
-export default function Container(props) {
-}
+export default styled.header`
+    background-color: #061f4a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #9bdaf1;
+`

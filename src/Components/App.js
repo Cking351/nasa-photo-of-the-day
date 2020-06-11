@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from './Header';
-import Container from './Container';
 
 // Importing API link and key
 import { BASE_URL, API_KEY } from '../secrets';
@@ -35,11 +34,12 @@ function App() {
       <Header />
       <img src={photo} />
       <h3>{title}</h3>
-      <div className='paraContainer' id='myTarget'>
+      <div className='paraContainer'>
       <p className='paraText'>{info}</p>
       <br></br>
       <p>Image Credit and Copyright: {copyright}</p>
       <h3>{date}</h3>
+      <a id='myTarget'>Hope you enjoyed!</a>
       </div>
     </div>
   );
