@@ -35,10 +35,10 @@ function App() {
       <Header />
       <img src={photo} />
       <h3>{title}</h3>
-      <p>Image Credit and Copyright: {copyright}</p>
-      <h3>{date}</h3>
       <div className='paraContainer'>
       <p className='paraText'>{info}</p>
+      <p>Image Credit and Copyright: {copyright}</p>
+      <h3>{date}</h3>
       </div>
     </div>
   );
