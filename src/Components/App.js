@@ -37,9 +37,9 @@ function App() {
       <h3>{title}</h3>
       <div className='paraContainer' id='myTarget'>
       <p className='paraText'>{info}</p>
+      <br></br>
       <p>Image Credit and Copyright: {copyright}</p>
       <h3>{date}</h3>
-      <br></br>
       </div>
     </div>
   );

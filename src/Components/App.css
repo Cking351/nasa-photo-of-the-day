@@ -6,7 +6,7 @@ body {
 
 .App {
   text-align: center;
-  color: white;
+  color: #aeb0b5;
 }
 
 .App-logo {
@@ -21,14 +21,14 @@ body {
 }
 
 .App-header {
-  background-color: #1d1135;
+  background-color: #061f4a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #9bdaf1;
 }
 
 .App-link {
