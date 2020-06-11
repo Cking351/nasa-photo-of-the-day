@@ -28,7 +28,6 @@ function App() {
       setCopyright(dailyCopy)
     })
   })
-
   return (
     <div className="App">
       <Header />

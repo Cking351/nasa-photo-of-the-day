@@ -1,12 +1,18 @@
 
 body {
   background-color: black;
+  overflow: hidden;
 }
 
 
 .App {
   text-align: center;
   color: #aeb0b5;
+}
+
+.App p {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .App-logo {
@@ -19,17 +25,6 @@ body {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-/* .App-header {
-  background-color: #061f4a;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #9bdaf1;
-} */
 
 .App-link {
   color: #61dafb;

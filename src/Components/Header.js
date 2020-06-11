@@ -15,7 +15,7 @@ export default function Header() {
             <h1>Picture of the Day</h1>
             <br></br>
             <a href='#myTarget' onClick={liftOff}>
-            <Button>Launch!</Button>
+            <Button><span>Launch!</span></Button>
             </a>
         </Container>
     )
